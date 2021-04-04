@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		FF1C377E261A47DB00DF4BBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C377D261A47DB00DF4BBB /* AppDelegate.swift */; };
 		FF1C3780261A47DB00DF4BBB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C377F261A47DB00DF4BBB /* SceneDelegate.swift */; };
-		FF1C3782261A47DB00DF4BBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C3781261A47DB00DF4BBB /* ViewController.swift */; };
-		FF1C3785261A47DB00DF4BBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1C3783261A47DB00DF4BBB /* Main.storyboard */; };
+		FF1C3782261A47DB00DF4BBB /* MainFaithViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C3781261A47DB00DF4BBB /* MainFaithViewController.swift */; };
 		FF1C3787261A47DC00DF4BBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF1C3786261A47DC00DF4BBB /* Assets.xcassets */; };
 		FF1C378A261A47DC00DF4BBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1C3788261A47DC00DF4BBB /* LaunchScreen.storyboard */; };
 		FF1C3795261A47DC00DF4BBB /* FaithTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C3794261A47DC00DF4BBB /* FaithTests.swift */; };
@@ -38,8 +37,7 @@
 		FF1C377A261A47DB00DF4BBB /* Faith.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Faith.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF1C377D261A47DB00DF4BBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF1C377F261A47DB00DF4BBB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FF1C3781261A47DB00DF4BBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FF1C3784261A47DB00DF4BBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF1C3781261A47DB00DF4BBB /* MainFaithViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFaithViewController.swift; sourceTree = "<group>"; };
 		FF1C3786261A47DC00DF4BBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF1C3789261A47DC00DF4BBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF1C378B261A47DC00DF4BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +47,11 @@
 		FF1C379B261A47DC00DF4BBB /* FaithUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaithUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF1C379F261A47DC00DF4BBB /* FaithUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaithUITests.swift; sourceTree = "<group>"; };
 		FF1C37A1261A47DC00DF4BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF1C37BF261A55B700DF4BBB /* SnapKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SnapKit.xcframework; path = Carthage/Build/SnapKit.xcframework; sourceTree = "<group>"; };
+		FF1C37C5261A560400DF4BBB /* RxCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxCocoa.xcframework; path = Carthage/Build/RxCocoa.xcframework; sourceTree = "<group>"; };
+		FF1C37C6261A560400DF4BBB /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxSwift.xcframework; path = Carthage/Build/RxSwift.xcframework; sourceTree = "<group>"; };
+		FF1C37C7261A560400DF4BBB /* RxRelay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxRelay.xcframework; path = Carthage/Build/RxRelay.xcframework; sourceTree = "<group>"; };
+		FF1C37C8261A560400DF4BBB /* RxDataSources.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxDataSources.xcframework; path = Carthage/Build/RxDataSources.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,7 @@
 				FF1C3793261A47DC00DF4BBB /* FaithTests */,
 				FF1C379E261A47DC00DF4BBB /* FaithUITests */,
 				FF1C377B261A47DB00DF4BBB /* Products */,
+				FF1C37BE261A55B700DF4BBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +103,9 @@
 		FF1C377C261A47DB00DF4BBB /* Faith */ = {
 			isa = PBXGroup;
 			children = (
-				FF1C377D261A47DB00DF4BBB /* AppDelegate.swift */,
-				FF1C377F261A47DB00DF4BBB /* SceneDelegate.swift */,
-				FF1C3781261A47DB00DF4BBB /* ViewController.swift */,
-				FF1C3783261A47DB00DF4BBB /* Main.storyboard */,
+				FF1C37B4261A4B9400DF4BBB /* main */,
+				FF1C37B0261A4AE300DF4BBB /* global */,
 				FF1C3786261A47DC00DF4BBB /* Assets.xcassets */,
-				FF1C3788261A47DC00DF4BBB /* LaunchScreen.storyboard */,
 				FF1C378B261A47DC00DF4BBB /* Info.plist */,
 			);
 			path = Faith;
@@ -128,6 +129,36 @@
 			path = FaithUITests;
 			sourceTree = "<group>";
 		};
+		FF1C37B0261A4AE300DF4BBB /* global */ = {
+			isa = PBXGroup;
+			children = (
+				FF1C3788261A47DC00DF4BBB /* LaunchScreen.storyboard */,
+				FF1C377D261A47DB00DF4BBB /* AppDelegate.swift */,
+				FF1C377F261A47DB00DF4BBB /* SceneDelegate.swift */,
+			);
+			path = global;
+			sourceTree = "<group>";
+		};
+		FF1C37B4261A4B9400DF4BBB /* main */ = {
+			isa = PBXGroup;
+			children = (
+				FF1C3781261A47DB00DF4BBB /* MainFaithViewController.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		FF1C37BE261A55B700DF4BBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF1C37C5261A560400DF4BBB /* RxCocoa.xcframework */,
+				FF1C37C8261A560400DF4BBB /* RxDataSources.xcframework */,
+				FF1C37C7261A560400DF4BBB /* RxRelay.xcframework */,
+				FF1C37C6261A560400DF4BBB /* RxSwift.xcframework */,
+				FF1C37BF261A55B700DF4BBB /* SnapKit.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +169,7 @@
 				FF1C3776261A47DB00DF4BBB /* Sources */,
 				FF1C3777261A47DB00DF4BBB /* Frameworks */,
 				FF1C3778261A47DB00DF4BBB /* Resources */,
+				FF1C37D3261A56CD00DF4BBB /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -233,7 +265,6 @@
 			files = (
 				FF1C378A261A47DC00DF4BBB /* LaunchScreen.storyboard in Resources */,
 				FF1C3787261A47DC00DF4BBB /* Assets.xcassets in Resources */,
-				FF1C3785261A47DB00DF4BBB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,12 +284,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FF1C37D3261A56CD00DF4BBB /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage outdated --xcode-warnings 2>/dev/null\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FF1C3776261A47DB00DF4BBB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF1C3782261A47DB00DF4BBB /* ViewController.swift in Sources */,
+				FF1C3782261A47DB00DF4BBB /* MainFaithViewController.swift in Sources */,
 				FF1C377E261A47DB00DF4BBB /* AppDelegate.swift in Sources */,
 				FF1C3780261A47DB00DF4BBB /* SceneDelegate.swift in Sources */,
 			);
@@ -296,14 +348,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FF1C3783261A47DB00DF4BBB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FF1C3784261A47DB00DF4BBB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FF1C3788261A47DC00DF4BBB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

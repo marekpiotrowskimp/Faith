@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,17 @@
 		FF1C378A261A47DC00DF4BBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1C3788261A47DC00DF4BBB /* LaunchScreen.storyboard */; };
 		FF1C3795261A47DC00DF4BBB /* FaithTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C3794261A47DC00DF4BBB /* FaithTests.swift */; };
 		FF1C37A0261A47DC00DF4BBB /* FaithUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C379F261A47DC00DF4BBB /* FaithUITests.swift */; };
+		FF1C37FD261A667800DF4BBB /* RosaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C37FC261A667800DF4BBB /* RosaryViewController.swift */; };
+		FF1C3807261B4CFB00DF4BBB /* SnapKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF1C37BF261A55B700DF4BBB /* SnapKit.xcframework */; };
+		FF1C3808261B4CFB00DF4BBB /* SnapKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF1C37BF261A55B700DF4BBB /* SnapKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FF1C3812261B4D1300DF4BBB /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF1C37C6261A560400DF4BBB /* RxSwift.xcframework */; };
+		FF1C3813261B4D1300DF4BBB /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF1C37C6261A560400DF4BBB /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FF1C381C261B4D4400DF4BBB /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF1C37C7261A560400DF4BBB /* RxRelay.xcframework */; };
+		FF1C381D261B4D4400DF4BBB /* RxRelay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF1C37C7261A560400DF4BBB /* RxRelay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FF1C3826261B4D6B00DF4BBB /* RxCocoa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF1C37C5261A560400DF4BBB /* RxCocoa.xcframework */; };
+		FF1C3827261B4D6B00DF4BBB /* RxCocoa.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF1C37C5261A560400DF4BBB /* RxCocoa.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FF1C382C261B56EC00DF4BBB /* BibleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C382B261B56EC00DF4BBB /* BibleModel.swift */; };
+		FF1C3833261B591000DF4BBB /* t_kjv.json in Resources */ = {isa = PBXBuildFile; fileRef = FF1C3832261B591000DF4BBB /* t_kjv.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +43,23 @@
 			remoteInfo = Faith;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FF1C3809261B4CFB00DF4BBB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FF1C381D261B4D4400DF4BBB /* RxRelay.xcframework in Embed Frameworks */,
+				FF1C3827261B4D6B00DF4BBB /* RxCocoa.xcframework in Embed Frameworks */,
+				FF1C3813261B4D1300DF4BBB /* RxSwift.xcframework in Embed Frameworks */,
+				FF1C3808261B4CFB00DF4BBB /* SnapKit.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FF1C377A261A47DB00DF4BBB /* Faith.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Faith.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +80,9 @@
 		FF1C37C6261A560400DF4BBB /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxSwift.xcframework; path = Carthage/Build/RxSwift.xcframework; sourceTree = "<group>"; };
 		FF1C37C7261A560400DF4BBB /* RxRelay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxRelay.xcframework; path = Carthage/Build/RxRelay.xcframework; sourceTree = "<group>"; };
 		FF1C37C8261A560400DF4BBB /* RxDataSources.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxDataSources.xcframework; path = Carthage/Build/RxDataSources.xcframework; sourceTree = "<group>"; };
+		FF1C37FC261A667800DF4BBB /* RosaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosaryViewController.swift; sourceTree = "<group>"; };
+		FF1C382B261B56EC00DF4BBB /* BibleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleModel.swift; sourceTree = "<group>"; };
+		FF1C3832261B591000DF4BBB /* t_kjv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = t_kjv.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +90,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1C381C261B4D4400DF4BBB /* RxRelay.xcframework in Frameworks */,
+				FF1C3826261B4D6B00DF4BBB /* RxCocoa.xcframework in Frameworks */,
+				FF1C3812261B4D1300DF4BBB /* RxSwift.xcframework in Frameworks */,
+				FF1C3807261B4CFB00DF4BBB /* SnapKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +138,9 @@
 		FF1C377C261A47DB00DF4BBB /* Faith */ = {
 			isa = PBXGroup;
 			children = (
+				FF1C3831261B58AF00DF4BBB /* dataSource */,
+				FF1C382A261B56C900DF4BBB /* models */,
+				FF1C37FB261A663C00DF4BBB /* rosary */,
 				FF1C37B4261A4B9400DF4BBB /* main */,
 				FF1C37B0261A4AE300DF4BBB /* global */,
 				FF1C3786261A47DC00DF4BBB /* Assets.xcassets */,
@@ -159,6 +197,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FF1C37FB261A663C00DF4BBB /* rosary */ = {
+			isa = PBXGroup;
+			children = (
+				FF1C37FC261A667800DF4BBB /* RosaryViewController.swift */,
+			);
+			path = rosary;
+			sourceTree = "<group>";
+		};
+		FF1C382A261B56C900DF4BBB /* models */ = {
+			isa = PBXGroup;
+			children = (
+				FF1C382B261B56EC00DF4BBB /* BibleModel.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		FF1C3831261B58AF00DF4BBB /* dataSource */ = {
+			isa = PBXGroup;
+			children = (
+				FF1C3832261B591000DF4BBB /* t_kjv.json */,
+			);
+			path = dataSource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,6 +232,7 @@
 				FF1C3777261A47DB00DF4BBB /* Frameworks */,
 				FF1C3778261A47DB00DF4BBB /* Resources */,
 				FF1C37D3261A56CD00DF4BBB /* Carthage */,
+				FF1C3809261B4CFB00DF4BBB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -265,6 +328,7 @@
 			files = (
 				FF1C378A261A47DC00DF4BBB /* LaunchScreen.storyboard in Resources */,
 				FF1C3787261A47DC00DF4BBB /* Assets.xcassets in Resources */,
+				FF1C3833261B591000DF4BBB /* t_kjv.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +374,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1C37FD261A667800DF4BBB /* RosaryViewController.swift in Sources */,
 				FF1C3782261A47DB00DF4BBB /* MainFaithViewController.swift in Sources */,
+				FF1C382C261B56EC00DF4BBB /* BibleModel.swift in Sources */,
 				FF1C377E261A47DB00DF4BBB /* AppDelegate.swift in Sources */,
 				FF1C3780261A47DB00DF4BBB /* SceneDelegate.swift in Sources */,
 			);

@@ -15,8 +15,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let scene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: scene)
-        let navigationViewController = UINavigationController(rootViewController: MainFaithViewController())
-        window.rootViewController = navigationViewController
+        let tabBar = UITabBarController()
+        tabBar.viewControllers = [MainFaithViewController(), RosaryViewController()]
+        tabBar.tabBar.unselectedItemTintColor = .lightGray
+        tabBar.tabBar.tintColor = .black
+        tabBar.tabBar.backgroundColor = .white
+        tabBar.tabBar.itemPositioning = .fill
+        tabBar.selectedIndex = 0
+
+        window.rootViewController = tabBar
         self.window = window
         window.makeKeyAndVisible()
     }

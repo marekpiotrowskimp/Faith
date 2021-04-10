@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: scene)
         let tabBar = UITabBarController()
-        tabBar.viewControllers = [MainFaithViewController(), RosaryViewController()]
+        tabBar.viewControllers = AppInitializator().getViewControllers()
         tabBar.tabBar.unselectedItemTintColor = .lightGray
         tabBar.tabBar.tintColor = .black
         tabBar.tabBar.backgroundColor = .white

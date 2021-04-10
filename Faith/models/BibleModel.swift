@@ -14,16 +14,20 @@ import Foundation
 
 // MARK: - Bible
 struct BibleModel: Codable {
-    let bibleRows: Resultset
+    let bibleRows: BibleRows
     
     enum CodingKeys: String, CodingKey {
         case bibleRows = "resultset"
     }
+    
+    static func empty() -> BibleModel {
+        BibleModel(bibleRows: BibleRows(rows: []))
+    }
 }
 
 // MARK: - Resultset
-struct Resultset: Codable {
-    let rows: [Row]
+struct BibleRows: Codable {
+    let rows: [BibleRow]
     
     enum CodingKeys: String, CodingKey {
         case rows = "row"
@@ -31,7 +35,7 @@ struct Resultset: Codable {
 }
 
 // MARK: - Row
-struct Row: Codable {
+struct BibleRow: Codable {
     let field: [Field]
 }
 

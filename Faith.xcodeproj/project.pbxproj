@@ -25,6 +25,29 @@
 		FF1C3827261B4D6B00DF4BBB /* RxCocoa.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF1C37C5261A560400DF4BBB /* RxCocoa.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FF1C382C261B56EC00DF4BBB /* BibleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1C382B261B56EC00DF4BBB /* BibleModel.swift */; };
 		FF1C3833261B591000DF4BBB /* t_kjv.json in Resources */ = {isa = PBXBuildFile; fileRef = FF1C3832261B591000DF4BBB /* t_kjv.json */; };
+		FF5E5258261B7D460048E786 /* BibleDataSourceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5E5257261B7D460048E786 /* BibleDataSourceInterface.swift */; };
+		FF5E525C261B7D6E0048E786 /* BibleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5E525B261B7D6E0048E786 /* BibleDataSource.swift */; };
+		FF5E5262261B7EBC0048E786 /* t_bbe.json in Resources */ = {isa = PBXBuildFile; fileRef = FF5E5260261B7EBC0048E786 /* t_bbe.json */; };
+		FF5E5263261B7EBC0048E786 /* t_asv.json in Resources */ = {isa = PBXBuildFile; fileRef = FF5E5261261B7EBC0048E786 /* t_asv.json */; };
+		FF5E5268261B7ECD0048E786 /* t_web.json in Resources */ = {isa = PBXBuildFile; fileRef = FF5E5266261B7ECD0048E786 /* t_web.json */; };
+		FF5E5269261B7ECD0048E786 /* t_ylt.json in Resources */ = {isa = PBXBuildFile; fileRef = FF5E5267261B7ECD0048E786 /* t_ylt.json */; };
+		FF5E526D261B80DE0048E786 /* BibleTranslationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5E526C261B80DE0048E786 /* BibleTranslationModel.swift */; };
+		FF5E5271261B81B80048E786 /* bible_version_key.json in Resources */ = {isa = PBXBuildFile; fileRef = FF5E5270261B81B80048E786 /* bible_version_key.json */; };
+		FF5E5275261B86B80048E786 /* BibleBooksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5E5274261B86B80048E786 /* BibleBooksModel.swift */; };
+		FF5E5279261B88A60048E786 /* key_english.json in Resources */ = {isa = PBXBuildFile; fileRef = FF5E5278261B88A60048E786 /* key_english.json */; };
+		FF5E527D261B89340048E786 /* BibleGenreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5E527C261B89340048E786 /* BibleGenreModel.swift */; };
+		FF5E5281261B8A2A0048E786 /* key_genre_english.json in Resources */ = {isa = PBXBuildFile; fileRef = FF5E5280261B8A2A0048E786 /* key_genre_english.json */; };
+		FF5E5285261B91240048E786 /* LoadData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5E5284261B91240048E786 /* LoadData.swift */; };
+		FF7B35AD261B9FE30013A77E /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B35AC261B9FE30013A77E /* AppSettings.swift */; };
+		FF7B35B4261BA4480013A77E /* BibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B35B3261BA4480013A77E /* BibleViewController.swift */; };
+		FF7B35BA261BA5CF0013A77E /* BibleInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B35B9261BA5CF0013A77E /* BibleInterfaces.swift */; };
+		FF7B35BE261BA5E10013A77E /* BiblePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B35BD261BA5E10013A77E /* BiblePresenter.swift */; };
+		FF7B35C2261BA5F20013A77E /* BibleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B35C1261BA5F20013A77E /* BibleRouter.swift */; };
+		FF7B35C6261BA6080013A77E /* BibleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B35C5261BA6080013A77E /* BibleInteractor.swift */; };
+		FF7B35CA261BA61A0013A77E /* BibleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B35C9261BA61A0013A77E /* BibleConfigurator.swift */; };
+		FF7B35CE261BA6790013A77E /* BibleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B35CD261BA6790013A77E /* BibleView.swift */; };
+		FF9C42AE2622585E004E1ABB /* GenreBooksTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9C42AD2622585E004E1ABB /* GenreBooksTableCellView.swift */; };
+		FF9DC824261CA23B0010A339 /* AppInitializator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9DC823261CA23B0010A339 /* AppInitializator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +106,29 @@
 		FF1C37FC261A667800DF4BBB /* RosaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosaryViewController.swift; sourceTree = "<group>"; };
 		FF1C382B261B56EC00DF4BBB /* BibleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleModel.swift; sourceTree = "<group>"; };
 		FF1C3832261B591000DF4BBB /* t_kjv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = t_kjv.json; sourceTree = "<group>"; };
+		FF5E5257261B7D460048E786 /* BibleDataSourceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleDataSourceInterface.swift; sourceTree = "<group>"; };
+		FF5E525B261B7D6E0048E786 /* BibleDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleDataSource.swift; sourceTree = "<group>"; };
+		FF5E5260261B7EBC0048E786 /* t_bbe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = t_bbe.json; sourceTree = "<group>"; };
+		FF5E5261261B7EBC0048E786 /* t_asv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = t_asv.json; sourceTree = "<group>"; };
+		FF5E5266261B7ECD0048E786 /* t_web.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = t_web.json; sourceTree = "<group>"; };
+		FF5E5267261B7ECD0048E786 /* t_ylt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = t_ylt.json; sourceTree = "<group>"; };
+		FF5E526C261B80DE0048E786 /* BibleTranslationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleTranslationModel.swift; sourceTree = "<group>"; };
+		FF5E5270261B81B80048E786 /* bible_version_key.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = bible_version_key.json; sourceTree = "<group>"; };
+		FF5E5274261B86B80048E786 /* BibleBooksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleBooksModel.swift; sourceTree = "<group>"; };
+		FF5E5278261B88A60048E786 /* key_english.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = key_english.json; sourceTree = "<group>"; };
+		FF5E527C261B89340048E786 /* BibleGenreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleGenreModel.swift; sourceTree = "<group>"; };
+		FF5E5280261B8A2A0048E786 /* key_genre_english.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = key_genre_english.json; sourceTree = "<group>"; };
+		FF5E5284261B91240048E786 /* LoadData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadData.swift; sourceTree = "<group>"; };
+		FF7B35AC261B9FE30013A77E /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		FF7B35B3261BA4480013A77E /* BibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleViewController.swift; sourceTree = "<group>"; };
+		FF7B35B9261BA5CF0013A77E /* BibleInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleInterfaces.swift; sourceTree = "<group>"; };
+		FF7B35BD261BA5E10013A77E /* BiblePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiblePresenter.swift; sourceTree = "<group>"; };
+		FF7B35C1261BA5F20013A77E /* BibleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleRouter.swift; sourceTree = "<group>"; };
+		FF7B35C5261BA6080013A77E /* BibleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleInteractor.swift; sourceTree = "<group>"; };
+		FF7B35C9261BA61A0013A77E /* BibleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleConfigurator.swift; sourceTree = "<group>"; };
+		FF7B35CD261BA6790013A77E /* BibleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleView.swift; sourceTree = "<group>"; };
+		FF9C42AD2622585E004E1ABB /* GenreBooksTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreBooksTableCellView.swift; sourceTree = "<group>"; };
+		FF9DC823261CA23B0010A339 /* AppInitializator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInitializator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +184,7 @@
 		FF1C377C261A47DB00DF4BBB /* Faith */ = {
 			isa = PBXGroup;
 			children = (
+				FF7B35B2261BA4270013A77E /* bible */,
 				FF1C3831261B58AF00DF4BBB /* dataSource */,
 				FF1C382A261B56C900DF4BBB /* models */,
 				FF1C37FB261A663C00DF4BBB /* rosary */,
@@ -173,6 +220,8 @@
 				FF1C3788261A47DC00DF4BBB /* LaunchScreen.storyboard */,
 				FF1C377D261A47DB00DF4BBB /* AppDelegate.swift */,
 				FF1C377F261A47DB00DF4BBB /* SceneDelegate.swift */,
+				FF7B35AC261B9FE30013A77E /* AppSettings.swift */,
+				FF9DC823261CA23B0010A339 /* AppInitializator.swift */,
 			);
 			path = global;
 			sourceTree = "<group>";
@@ -209,6 +258,9 @@
 			isa = PBXGroup;
 			children = (
 				FF1C382B261B56EC00DF4BBB /* BibleModel.swift */,
+				FF5E526C261B80DE0048E786 /* BibleTranslationModel.swift */,
+				FF5E5274261B86B80048E786 /* BibleBooksModel.swift */,
+				FF5E527C261B89340048E786 /* BibleGenreModel.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -216,9 +268,50 @@
 		FF1C3831261B58AF00DF4BBB /* dataSource */ = {
 			isa = PBXGroup;
 			children = (
-				FF1C3832261B591000DF4BBB /* t_kjv.json */,
+				FF5E525F261B7E950048E786 /* data */,
+				FF5E5257261B7D460048E786 /* BibleDataSourceInterface.swift */,
+				FF5E525B261B7D6E0048E786 /* BibleDataSource.swift */,
+				FF5E5284261B91240048E786 /* LoadData.swift */,
 			);
 			path = dataSource;
+			sourceTree = "<group>";
+		};
+		FF5E525F261B7E950048E786 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				FF5E5280261B8A2A0048E786 /* key_genre_english.json */,
+				FF5E5278261B88A60048E786 /* key_english.json */,
+				FF5E5270261B81B80048E786 /* bible_version_key.json */,
+				FF5E5261261B7EBC0048E786 /* t_asv.json */,
+				FF5E5260261B7EBC0048E786 /* t_bbe.json */,
+				FF1C3832261B591000DF4BBB /* t_kjv.json */,
+				FF5E5266261B7ECD0048E786 /* t_web.json */,
+				FF5E5267261B7ECD0048E786 /* t_ylt.json */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		FF7B35B2261BA4270013A77E /* bible */ = {
+			isa = PBXGroup;
+			children = (
+				FF9C42A426223126004E1ABB /* verses */,
+				FF7B35B9261BA5CF0013A77E /* BibleInterfaces.swift */,
+				FF7B35BD261BA5E10013A77E /* BiblePresenter.swift */,
+				FF7B35C1261BA5F20013A77E /* BibleRouter.swift */,
+				FF7B35C5261BA6080013A77E /* BibleInteractor.swift */,
+				FF7B35C9261BA61A0013A77E /* BibleConfigurator.swift */,
+				FF7B35B3261BA4480013A77E /* BibleViewController.swift */,
+				FF7B35CD261BA6790013A77E /* BibleView.swift */,
+				FF9C42AD2622585E004E1ABB /* GenreBooksTableCellView.swift */,
+			);
+			path = bible;
+			sourceTree = "<group>";
+		};
+		FF9C42A426223126004E1ABB /* verses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = verses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,9 +419,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF5E5269261B7ECD0048E786 /* t_ylt.json in Resources */,
+				FF5E5279261B88A60048E786 /* key_english.json in Resources */,
+				FF5E5281261B8A2A0048E786 /* key_genre_english.json in Resources */,
+				FF5E5271261B81B80048E786 /* bible_version_key.json in Resources */,
 				FF1C378A261A47DC00DF4BBB /* LaunchScreen.storyboard in Resources */,
 				FF1C3787261A47DC00DF4BBB /* Assets.xcassets in Resources */,
+				FF5E5263261B7EBC0048E786 /* t_asv.json in Resources */,
+				FF5E5262261B7EBC0048E786 /* t_bbe.json in Resources */,
 				FF1C3833261B591000DF4BBB /* t_kjv.json in Resources */,
+				FF5E5268261B7ECD0048E786 /* t_web.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,10 +474,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF5E525C261B7D6E0048E786 /* BibleDataSource.swift in Sources */,
 				FF1C37FD261A667800DF4BBB /* RosaryViewController.swift in Sources */,
+				FF7B35AD261B9FE30013A77E /* AppSettings.swift in Sources */,
 				FF1C3782261A47DB00DF4BBB /* MainFaithViewController.swift in Sources */,
 				FF1C382C261B56EC00DF4BBB /* BibleModel.swift in Sources */,
+				FF9C42AE2622585E004E1ABB /* GenreBooksTableCellView.swift in Sources */,
+				FF7B35B4261BA4480013A77E /* BibleViewController.swift in Sources */,
+				FF5E5275261B86B80048E786 /* BibleBooksModel.swift in Sources */,
+				FF5E526D261B80DE0048E786 /* BibleTranslationModel.swift in Sources */,
+				FF7B35C6261BA6080013A77E /* BibleInteractor.swift in Sources */,
+				FF9DC824261CA23B0010A339 /* AppInitializator.swift in Sources */,
+				FF7B35CE261BA6790013A77E /* BibleView.swift in Sources */,
+				FF7B35CA261BA61A0013A77E /* BibleConfigurator.swift in Sources */,
+				FF7B35BA261BA5CF0013A77E /* BibleInterfaces.swift in Sources */,
+				FF5E5285261B91240048E786 /* LoadData.swift in Sources */,
+				FF5E5258261B7D460048E786 /* BibleDataSourceInterface.swift in Sources */,
+				FF7B35C2261BA5F20013A77E /* BibleRouter.swift in Sources */,
 				FF1C377E261A47DB00DF4BBB /* AppDelegate.swift in Sources */,
+				FF7B35BE261BA5E10013A77E /* BiblePresenter.swift in Sources */,
+				FF5E527D261B89340048E786 /* BibleGenreModel.swift in Sources */,
 				FF1C3780261A47DB00DF4BBB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

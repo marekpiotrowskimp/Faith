@@ -7,16 +7,15 @@
 
 import UIKit
 import SnapKit
+import RxSwift
 
 class MainFaithViewController: UIViewController {
-
+    var disposeBag = DisposeBag()
+    var dataSource: BibleDataSourceInterface?
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red
-        loadBible()
-        view.snp.makeConstraints { make in
-            
-        }
+        load()
     }
 
     override var tabBarItem: UITabBarItem! {
@@ -27,12 +26,24 @@ class MainFaithViewController: UIViewController {
         set {}
     }
     
-    func loadBible() {
-       
-        guard let path = Bundle.main.path(forResource: "t_kjv", ofType: "json"),
-              let jsonData = try? Data(contentsOf: URL(fileURLWithPath: path)),
-              let bible = try? JSONDecoder().decode(BibleModel.self, from: jsonData)
-        else {return}
+    func load() {
+        dataSource = BibleDataSource.shared
+        dataSource?.getBible().subscribe(onNext: { data in
+            print(data.bibleRows.rows.first ?? "")
+        }).disposed(by: disposeBag)
+        
+        dataSource?.getBooks().subscribe(onNext: {data in
+            print(data)
+        }).disposed(by: disposeBag)
+        
+        dataSource?.getTranslations().subscribe(onNext: { data in
+            print(data)
+        }).disposed(by: disposeBag)
+        
+        dataSource?.getGenre().subscribe(onNext: { data in
+            print(data)
+        }).disposed(by: disposeBag)
     }
+    
 }
 

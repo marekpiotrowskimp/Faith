@@ -13,11 +13,17 @@ import RxCocoa
 
 class BibleView: UIView {
     private let segmentView = UISegmentedControl(items: ["Old Testament", "New Testament"])
-    let tabelView = UITableView()
+    let tableView = UITableView()
     let dataSource = BibleBooksDataSource { (table, data) -> UITableViewCell in
-        let cell = table.dequeueReusableCell(withIdentifier: GenreBooksTableCellView.cellIndentfier)
-        cell?.textLabel?.text = data.n
+        let cell = table.dequeueReusableCell(withIdentifier: GenreBooksTableCellView.cellIndentfier) as? GenreBooksTableCellView
+        cell?.setupCell(viewModel: data, expandAction: {
+            table.reloadData()
+        })
         return cell ?? UITableViewCell()
+    } headerAction: { (table, data) -> UITableViewHeaderFooterView in
+        let header = table.dequeueReusableHeaderFooterView(withIdentifier: GenreBooksSectionHeaderView.headerIndentfier) as? GenreBooksSectionHeaderView
+        header?.setupHeader(data)
+        return header ?? UITableViewHeaderFooterView()
     }
     
     init() {
@@ -32,14 +38,19 @@ class BibleView: UIView {
     
     private func createUI() {
         segmentView.translatesAutoresizingMaskIntoConstraints = false
+        segmentView.backgroundColor = .white
+        segmentView.setTitleTextAttributes([.foregroundColor: UIColor.black, NSAttributedString.Key.font: FaithFonts.Normal], for: .normal)
+        segmentView.selectedSegmentIndex = 0
         addSubview(segmentView)
         segmentView.snp.makeConstraints { make in
             make.leading.trailing.top.equalToSuperview()
         }
         
-        tabelView.register(GenreBooksTableCellView.self, forCellReuseIdentifier: GenreBooksTableCellView.cellIndentfier)
-        addSubview(tabelView)
-        tabelView.snp.makeConstraints { make in
+        tableView.register(GenreBooksTableCellView.self, forCellReuseIdentifier: GenreBooksTableCellView.cellIndentfier)
+        tableView.register(GenreBooksSectionHeaderView.self, forHeaderFooterViewReuseIdentifier: GenreBooksSectionHeaderView.headerIndentfier)
+        tableView.delegate = dataSource
+        addSubview(tableView)
+        tableView.snp.makeConstraints { make in
             make.top.equalTo(segmentView.snp.bottom)
             make.leading.trailing.bottom.equalToSuperview()
         }
@@ -50,32 +61,38 @@ class BibleView: UIView {
     }
 }
 
-
-class BibleBooksDataSource:  NSObject, RxTableViewDataSourceType, UITableViewDataSource {
+class BibleBooksDataSource:  NSObject, RxTableViewDataSourceType, UITableViewDataSource, UITableViewDelegate {
     typealias Element = [GenreBooks]
-    typealias CellAction = (UITableView, BookKey) -> UITableViewCell
+    typealias CellAction = (UITableView, GenreBooksCellViewModel) -> UITableViewCell
+    typealias HeaderAction = (UITableView, GenreBooks) -> UITableViewHeaderFooterView
     
     private var data = Element()
     private let cellSetupAction: CellAction
+    private let headerSetupAction: HeaderAction
     
-    init(cellAction: @escaping CellAction) {
+    init(cellAction: @escaping CellAction, headerAction: @escaping HeaderAction) {
         cellSetupAction = cellAction
+        headerSetupAction = headerAction
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         data.count
     }
     
-    private func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        UITableViewHeaderFooterView()
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        headerSetupAction(tableView, data[section])
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        data[section].1.count
+        data[section].bookKeys.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        cellSetupAction(tableView, data[indexPath.section].1[indexPath.row])
+        cellSetupAction(tableView, data[indexPath.section].bookKeys[indexPath.row])
     }
     
     func tableView(_ tableView: UITableView, observedEvent: Event<Element>) {

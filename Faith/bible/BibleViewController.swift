@@ -29,15 +29,18 @@ class BibleViewController: UIViewController {
     }
     
     func creatUI() {
+        title = "Bible"
+        view.backgroundColor = .white
         view.addSubview(bibleView)
         bibleView.translatesAutoresizingMaskIntoConstraints = false
         bibleView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+            make.leading.trailing.bottom.equalToSuperview()
         }
     }
     
     func setupBindings() {
-        presenter?.getGenreAndBooks(.ot).bind(to: bibleView.tabelView.rx.items(dataSource: bibleView.dataSource)).disposed(by: desposeBag)
+        presenter?.getGenreAndBooks(.ot).bind(to: bibleView.tableView.rx.items(dataSource: bibleView.dataSource)).disposed(by: desposeBag)
     }
 }
 

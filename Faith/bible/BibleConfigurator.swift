@@ -28,6 +28,6 @@ class BibleConfigurator: ConfiguratorStrategy {
         let presenter = BiblePresenter(interactor: interactor)
         let viewController = BibleViewController()
         viewController.presenter = presenter
-        return viewController
+        return UINavigationController(rootViewController: viewController)
     }
 }

@@ -31,10 +31,12 @@ class BibleDataSource: BibleDataSourceInterface {
         guard let genre = genre, let books = books else { return Observable.just([])}
         let genreBooks = genre.compactMap({ bibleGenreElement -> GenreBooks in
             
-            let bookKeys = books.books.keys.filter { booksItem in
+            let bookKeysViewModel = books.books.keys.filter { booksItem in
                 return booksItem.g == bibleGenreElement.genre && booksItem.t == type
+            }.compactMap { bookKey -> GenreBooksCellViewModel in
+                GenreBooksCellViewModel(data: bookKey)
             }
-            return (bibleGenreElement, bookKeys)
+            return (bibleGenreElement, bookKeysViewModel)
         })
         
         return Observable.just(genreBooks.filter({ !$0.1.isEmpty }))

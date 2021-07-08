@@ -12,7 +12,7 @@
 
 // MARK: - BibleBooks
 
-typealias GenreBooks = (BibleGenreElement, [BookKey])
+typealias GenreBooks = (genre: BibleGenreElement, bookKeys: [GenreBooksCellViewModel])
 
 struct BibleBooks: Codable {
     let books: Books

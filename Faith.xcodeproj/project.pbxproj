@@ -47,6 +47,11 @@
 		FF7B35CA261BA61A0013A77E /* BibleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B35C9261BA61A0013A77E /* BibleConfigurator.swift */; };
 		FF7B35CE261BA6790013A77E /* BibleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7B35CD261BA6790013A77E /* BibleView.swift */; };
 		FF9C42AE2622585E004E1ABB /* GenreBooksTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9C42AD2622585E004E1ABB /* GenreBooksTableCellView.swift */; };
+		FF9C42B426237543004E1ABB /* BibleNavigatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9C42B326237543004E1ABB /* BibleNavigatorController.swift */; };
+		FF9C42BA26237902004E1ABB /* GenreBooksSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9C42B926237902004E1ABB /* GenreBooksSectionHeaderView.swift */; };
+		FF9C42BF26237DB3004E1ABB /* FaithFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9C42BE26237DB3004E1ABB /* FaithFonts.swift */; };
+		FF9C42C5262B590C004E1ABB /* RxGesture.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF9C42C4262B590C004E1ABB /* RxGesture.xcframework */; };
+		FF9C42C6262B590C004E1ABB /* RxGesture.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF9C42C4262B590C004E1ABB /* RxGesture.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FF9DC824261CA23B0010A339 /* AppInitializator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9DC823261CA23B0010A339 /* AppInitializator.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +79,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				FF9C42C6262B590C004E1ABB /* RxGesture.xcframework in Embed Frameworks */,
 				FF1C381D261B4D4400DF4BBB /* RxRelay.xcframework in Embed Frameworks */,
 				FF1C3827261B4D6B00DF4BBB /* RxCocoa.xcframework in Embed Frameworks */,
 				FF1C3813261B4D1300DF4BBB /* RxSwift.xcframework in Embed Frameworks */,
@@ -128,6 +134,10 @@
 		FF7B35C9261BA61A0013A77E /* BibleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleConfigurator.swift; sourceTree = "<group>"; };
 		FF7B35CD261BA6790013A77E /* BibleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleView.swift; sourceTree = "<group>"; };
 		FF9C42AD2622585E004E1ABB /* GenreBooksTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreBooksTableCellView.swift; sourceTree = "<group>"; };
+		FF9C42B326237543004E1ABB /* BibleNavigatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleNavigatorController.swift; sourceTree = "<group>"; };
+		FF9C42B926237902004E1ABB /* GenreBooksSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreBooksSectionHeaderView.swift; sourceTree = "<group>"; };
+		FF9C42BE26237DB3004E1ABB /* FaithFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaithFonts.swift; sourceTree = "<group>"; };
+		FF9C42C4262B590C004E1ABB /* RxGesture.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxGesture.xcframework; path = Carthage/Build/RxGesture.xcframework; sourceTree = "<group>"; };
 		FF9DC823261CA23B0010A339 /* AppInitializator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInitializator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF9C42C5262B590C004E1ABB /* RxGesture.xcframework in Frameworks */,
 				FF1C381C261B4D4400DF4BBB /* RxRelay.xcframework in Frameworks */,
 				FF1C3826261B4D6B00DF4BBB /* RxCocoa.xcframework in Frameworks */,
 				FF1C3812261B4D1300DF4BBB /* RxSwift.xcframework in Frameworks */,
@@ -184,6 +195,7 @@
 		FF1C377C261A47DB00DF4BBB /* Faith */ = {
 			isa = PBXGroup;
 			children = (
+				FF9C42BD26237D93004E1ABB /* Consts */,
 				FF7B35B2261BA4270013A77E /* bible */,
 				FF1C3831261B58AF00DF4BBB /* dataSource */,
 				FF1C382A261B56C900DF4BBB /* models */,
@@ -237,6 +249,7 @@
 		FF1C37BE261A55B700DF4BBB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FF9C42C4262B590C004E1ABB /* RxGesture.xcframework */,
 				FF1C37C5261A560400DF4BBB /* RxCocoa.xcframework */,
 				FF1C37C8261A560400DF4BBB /* RxDataSources.xcframework */,
 				FF1C37C7261A560400DF4BBB /* RxRelay.xcframework */,
@@ -302,7 +315,9 @@
 				FF7B35C9261BA61A0013A77E /* BibleConfigurator.swift */,
 				FF7B35B3261BA4480013A77E /* BibleViewController.swift */,
 				FF7B35CD261BA6790013A77E /* BibleView.swift */,
+				FF9C42B326237543004E1ABB /* BibleNavigatorController.swift */,
 				FF9C42AD2622585E004E1ABB /* GenreBooksTableCellView.swift */,
+				FF9C42B926237902004E1ABB /* GenreBooksSectionHeaderView.swift */,
 			);
 			path = bible;
 			sourceTree = "<group>";
@@ -312,6 +327,14 @@
 			children = (
 			);
 			path = verses;
+			sourceTree = "<group>";
+		};
+		FF9C42BD26237D93004E1ABB /* Consts */ = {
+			isa = PBXGroup;
+			children = (
+				FF9C42BE26237DB3004E1ABB /* FaithFonts.swift */,
+			);
+			path = Consts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -479,9 +502,12 @@
 				FF7B35AD261B9FE30013A77E /* AppSettings.swift in Sources */,
 				FF1C3782261A47DB00DF4BBB /* MainFaithViewController.swift in Sources */,
 				FF1C382C261B56EC00DF4BBB /* BibleModel.swift in Sources */,
+				FF9C42B426237543004E1ABB /* BibleNavigatorController.swift in Sources */,
 				FF9C42AE2622585E004E1ABB /* GenreBooksTableCellView.swift in Sources */,
 				FF7B35B4261BA4480013A77E /* BibleViewController.swift in Sources */,
 				FF5E5275261B86B80048E786 /* BibleBooksModel.swift in Sources */,
+				FF9C42BF26237DB3004E1ABB /* FaithFonts.swift in Sources */,
+				FF9C42BA26237902004E1ABB /* GenreBooksSectionHeaderView.swift in Sources */,
 				FF5E526D261B80DE0048E786 /* BibleTranslationModel.swift in Sources */,
 				FF7B35C6261BA6080013A77E /* BibleInteractor.swift in Sources */,
 				FF9DC824261CA23B0010A339 /* AppInitializator.swift in Sources */,
@@ -662,6 +688,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JMMW48F6X4;
 				INFOPLIST_FILE = Faith/Info.plist;
@@ -671,6 +698,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ios.piron.faith.Faith;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -681,6 +709,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JMMW48F6X4;
 				INFOPLIST_FILE = Faith/Info.plist;
@@ -690,6 +719,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ios.piron.faith.Faith;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

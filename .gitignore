@@ -65,8 +65,9 @@ playground.xcworkspace
 # Carthage/Checkouts
 
 .DS_Store
+Carthage/Checkouts/
 Carthage/Build/
-Carthage
+Carthage/
 
 # Accio dependency management
 Dependencies/
@@ -90,4 +91,3 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
-
